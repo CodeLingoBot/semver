@@ -388,7 +388,7 @@ func (v PRVersion) Compare(o PRVersion) int {
 	}
 }
 
-// PreRelease version to string
+// version to string
 func (v PRVersion) String() string {
 	if v.IsNum {
 		return strconv.FormatUint(v.VersionNum, 10)
